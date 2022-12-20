@@ -9,49 +9,111 @@
     </head>
     <body>
         <div class="container">
-            <h1>
-                CALCOLA IL PREZZO DEL TUO BIGLIETTO
-            </h1>
-            <div class="box">
-                <div class="flex">
-                    <div class="info">
-                        <label class="my-label" for="nome">
-                            Nome Cognome
-                        </label>
-                        <input type="text" id="nome" required>
+            <section id="section-1">
+                <h1>
+                    CALCOLA IL PREZZO DEL TUO BIGLIETTO
+                </h1>
+                <div class="box">
+                    <div class="flex">
+                        <div class="info">
+                            <label class="my-label" for="nome">
+                                Nome Cognome
+                            </label>
+                            <input type="text" id="nome" required>
+                        </div>
+                        <div class="info">
+                            <label class="my-label" for="km">
+                                Km da percorrere
+                            </label>
+                            <input type="text" id="km" required>
+                        </div>
+                        <div class="info">
+                            <label class="my-label" for="age">
+                                Fascia di età
+                            </label>
+                            <select name="" id="age" required>
+                                <option value="maggiorenne">
+                                    Maggiorenne
+                                </option>
+                                <option value="minorenne">
+                                    Minorenne
+                                </option>
+                                <option value="anziano">
+                                    Over 65
+                                </option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="info">
-                        <label class="my-label" for="km">
-                            Km da percorrere
-                        </label>
-                        <input type="text" id="km" required>
-                    </div>
-                    <div class="info">
-                        <label class="my-label" for="age">
-                            Fascia di età
-                        </label>
-                        <select name="" id="age" required>
-                            <option value="maggiorenne">
-                                Maggiorenne
-                            </option>
-                            <option value="minorenne">
-                                Minorenne
-                            </option>
-                            <option value="anziano">
-                                Over 65
-                            </option>
-                        </select>
+                    <div class="my-buttons">
+                        <button id="bottone-genera">
+                            Genera
+                        </button>
+                        <button id="bottone-annulla">
+                            Annulla
+                        </button>
                     </div>
                 </div>
-                <div class="my-buttons">
-                    <button id="bottone-genera">
-                        Genera
-                    </button>
-                    <button id="bottone-annulla">
-                        Annulla
-                    </button>
+            </section>
+
+            <section id="section-2">
+                <div>
+                    <h1>
+                        IL TUO BIGLIETTO
+                    </h1>
+                    <div class="box">
+                        <h2>
+                            DETTAGLIO PASSEGGERI
+                        </h2>
+                        <div class="box-2">
+                            <div class="flex">
+                                <div class="passeggero">
+                                    <div class="passeggero-2">
+                                        Nome passeggero
+                                    </div>
+                                    <div id="nome-inviato">
+                                        
+                                    </div>
+                                </div>
+                                <div class="biglietto flex">
+                                    <div class="biglietto-info">
+                                        <div class="tipo">
+                                            Offerta
+                                        </div>
+                                        <div id="offerta">
+
+                                        </div>
+                                    </div>
+                                    <div class="biglietto-info">
+                                        <div class="tipo">
+                                            Carrozza
+                                        </div>
+                                        <div id="carrozza">
+
+                                        </div>
+                                    </div>
+                                    <div class="biglietto-info">
+                                        <div class="tipo">
+                                            Codice CP
+                                        </div>
+                                        <div id="codice">
+
+                                        </div>
+                                    </div>
+                                    <div class="biglietto-info">
+                                        <div class="tipo">
+                                            Costo del biglietto
+                                        </div>
+                                        <div id="costo">
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
         
         <script type="text/javascript" src="js/scripts.js"></script>

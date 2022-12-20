@@ -43,6 +43,8 @@ bottoneGenera.addEventListener('click',
         console.log(km.value);
         console.log(age.value);
 
+        document.getElementById('nome-inviato').innerHTML = nome.value;
+
         // Calcola prezzo biglietto rispetto a Km indicati dall'utente
         numberKm = km.value;
         numberKm = parseInt(numberKm);
@@ -53,15 +55,23 @@ bottoneGenera.addEventListener('click',
         if (age.value == 'minorenne') {
             priceKm = (numberKm * 0.21) * 0.8;
             console.log('Il prezzo scontato per i minorenni è: ', priceKm.toFixed(2));
+            document.getElementById('offerta').innerHTML = 'Biglietto scontato';
+            document.getElementById('costo').innerHTML = priceKm.toFixed(2);
         }
         else if (age.value == 'anziano') {
             priceKm = (numberKm * 0.21) * 0.6;
             console.log('Il prezzo scontato per gli over 65 è: ', priceKm.toFixed(2));
+            document.getElementById('offerta').innerHTML = 'Biglietto scontato';
+            document.getElementById('costo').innerHTML = priceKm.toFixed(2);
         }
         else if (age.value == 'maggiorenne') {
             priceKm = numberKm * 0.21;
             console.log('Il prezzo per i maggiorenni è: ', priceKm.toFixed(2));
+            document.getElementById('offerta').innerHTML = 'Biglietto standard';
+            document.getElementById('costo').innerHTML = priceKm.toFixed(2);
         }
+
+
     }
 );
 
