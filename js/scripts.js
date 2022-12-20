@@ -11,35 +11,47 @@
     8. Fine
 */
 
+// Chiedere all'utente nome e cognome
 const nome = document.getElementById('nome');
 console.log(nome);
 console.log(typeof nome);
 console.log(nome.value);
 
-// Chiedere all'utente informazioni km - età
+// Chiedere all'utente km
 const km = document.getElementById('km');
-console.log(km);
 console.log(typeof km);
-console.log(km.value);
 
-let numberKm = km.value;
-console.log(numberKm);
-numberKm = parseInt(numberKm);
-console.log(typeof numberKm);
+// let numberKm = km.value;
+// console.log(typeof numberKm);
+// numberKm = parseInt(numberKm);
+// console.log(typeof numberKm);
 
+// Chiedere all'utente se è maggiorenne o no
 const age = document.getElementById('age');
 console.log(age);
 console.log(typeof age);
 console.log("L'utente rientra nella fascia di età: ", age);
 
+
+// All'evento click sul bottone "genera" controlla in console cosa ha inserito utente
 const bottoneGenera = document.getElementById('bottone-genera');
 console.log(bottoneGenera);
 
 bottoneGenera.addEventListener('click',
     function() {
         console.log(nome.value);
+        console.log(km.value);
+        console.log(age.value);
+
+        // Calcola prezzo biglietto rispetto a Km indicati dall'utente
+        numberKm = km.value;
+        numberKm = parseInt(numberKm);
         console.log(numberKm);
-        console.log(typeof numberKm);
+        let priceKm = (numberKm * 0.21);
+        console.log('Il prezzo per i chilometri indicati è', (numberKm * 0.21));
+
+        
     }
 );
+
 
