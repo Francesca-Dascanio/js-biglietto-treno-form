@@ -10,3 +10,23 @@
     7. Output finale: calcolo prezzo in relazione a età e chilometri
     8. Fine
 */
+
+const nome = document.getElementById('nome');
+console.log(nome);
+
+let nomeUtente = utente.value;
+console.log('Nome utente:', nomeUtente);
+
+// const km = document.getElementById('km');
+// console.log(km);
+// console.log(typeof km);
+
+// let numberKm = km;
+// numberKm = parseInt();
+// console.log(typeof numberKm);
+// console.log("L'utente deve percorrere km: ", numberKm);
+
+// const age = document.getElementById('age');
+// console.log(age);
+// console.log(typeof age);
+// console.log("L'utente rientra nella fascia di età: ", age);
