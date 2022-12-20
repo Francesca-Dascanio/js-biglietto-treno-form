@@ -52,15 +52,15 @@ bottoneGenera.addEventListener('click',
 
         if (age.value == 'minorenne') {
             priceKm = (numberKm * 0.21) * 0.8;
-            console.log('Il prezzo scontato per i minorenni è: ', priceKm);
+            console.log('Il prezzo scontato per i minorenni è: ', priceKm.toFixed(2));
         }
         else if (age.value == 'anziano') {
             priceKm = (numberKm * 0.21) * 0.6;
-            console.log('Il prezzo scontato per gli over 65 è: ', priceKm);
+            console.log('Il prezzo scontato per gli over 65 è: ', priceKm.toFixed(2));
         }
         else if (age.value == 'maggiorenne') {
             priceKm = numberKm * 0.21;
-            console.log('Il prezzo per i maggiorenni è: ', priceKm);
+            console.log('Il prezzo per i maggiorenni è: ', priceKm.toFixed(2));
         }
     }
 );
