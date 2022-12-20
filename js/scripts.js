@@ -50,7 +50,18 @@ bottoneGenera.addEventListener('click',
         let priceKm = (numberKm * 0.21);
         console.log('Il prezzo per i chilometri indicati è', (numberKm * 0.21));
 
-        
+        if (age.value == 'minorenne') {
+            priceKm = (numberKm * 0.21) * 0.8;
+            console.log('Il prezzo scontato per i minorenni è: ', priceKm);
+        }
+        else if (age.value == 'anziano') {
+            priceKm = (numberKm * 0.21) * 0.6;
+            console.log('Il prezzo scontato per gli over 65 è: ', priceKm);
+        }
+        else if (age.value == 'maggiorenne') {
+            priceKm = numberKm * 0.21;
+            console.log('Il prezzo per i maggiorenni è: ', priceKm);
+        }
     }
 );
 
