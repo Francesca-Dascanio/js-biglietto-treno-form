@@ -13,20 +13,33 @@
 
 const nome = document.getElementById('nome');
 console.log(nome);
+console.log(typeof nome);
+console.log(nome.value);
 
-let nomeUtente = utente.value;
-console.log('Nome utente:', nomeUtente);
+// Chiedere all'utente informazioni km - età
+const km = document.getElementById('km');
+console.log(km);
+console.log(typeof km);
+console.log(km.value);
 
-// const km = document.getElementById('km');
-// console.log(km);
-// console.log(typeof km);
+let numberKm = km.value;
+console.log(numberKm);
+numberKm = parseInt(numberKm);
+console.log(typeof numberKm);
 
-// let numberKm = km;
-// numberKm = parseInt();
-// console.log(typeof numberKm);
-// console.log("L'utente deve percorrere km: ", numberKm);
+const age = document.getElementById('age');
+console.log(age);
+console.log(typeof age);
+console.log("L'utente rientra nella fascia di età: ", age);
 
-// const age = document.getElementById('age');
-// console.log(age);
-// console.log(typeof age);
-// console.log("L'utente rientra nella fascia di età: ", age);
+const bottoneGenera = document.getElementById('bottone-genera');
+console.log(bottoneGenera);
+
+bottoneGenera.addEventListener('click',
+    function() {
+        console.log(nome.value);
+        console.log(numberKm);
+        console.log(typeof numberKm);
+    }
+);
+
