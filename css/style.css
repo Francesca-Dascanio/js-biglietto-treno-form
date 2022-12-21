@@ -8,7 +8,7 @@
 /* REGOLE GENERALI */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blue;
+    background-color: #ba1552;
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
     width: 100%;
     margin: 1rem 0;
     background-color: white;
-    color: blue;
+    color: #ba1552;
 }
 
 .flex {
@@ -55,7 +55,12 @@ body {
 
 
 button {
-    border: 1px solid blue;
+    border: 1px solid #ceccce;
+    background-color: #ceccce;
+    color:  #ba1552;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    border-radius: 5px;
 }
 
 
@@ -81,28 +86,31 @@ button {
     margin: 1rem 0;
     padding: 2rem;
     background-color: white;
-    color: blue;
+    color: black;
 }
 
 .box-2 {
-    border: 1px solid blue;
+    border: 1px solid #ba1552;
     margin: 2rem 0;
     
 }
 
 .passeggero {
     background-color:gray;
-    padding-right: 2rem;
-    height: 50vh;
-    color: white;
+    color: black;
+    font-weight: bold;
+    padding: 2rem;
+
 }
 
 .passeggero-2 {
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .tipo {
     padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
 }
 
 .biglietto-info {
