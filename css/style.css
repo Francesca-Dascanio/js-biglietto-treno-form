@@ -61,6 +61,14 @@ button {
 
 
 /* REGOLE SEZIONE 2 */
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 #section-2 h1 {
     text-align: center;
     padding: 4rem 0 0rem;

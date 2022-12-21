@@ -43,6 +43,11 @@ bottoneGenera.addEventListener('click',
         console.log(km.value);
         console.log(age.value);
 
+        // Compare il biglietto
+        const biglietto = document.getElementById('section-2');
+        biglietto.className = biglietto.className + 'block';
+
+        // Compare il nome
         document.getElementById('nome-inviato').innerHTML = nome.value;
 
         // Calcola prezzo biglietto rispetto a Km indicati dall'utente
